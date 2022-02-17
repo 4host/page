@@ -64,6 +64,14 @@
                    name="password"
                    placeholder="passphrase"
                    autofocus/>
+                   
+             <label id="staticrypt-remember-label" class="staticrypt-remember hidden">
+                <input id="staticrypt-remember"
+                       type="checkbox"
+                       name="remember"/>
+                Remember me
+            </label>
+
 
             <input type="submit" class="staticrypt-decrypt-button" value="DECRYPT"/>
         </form>
