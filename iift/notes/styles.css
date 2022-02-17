@@ -287,7 +287,7 @@ input[type="radio"] {
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .filters {
   text-align: center;
-  margin-top: 1rem;
+  margin-top: 0.1em;
 }
 
 .filters * {
@@ -315,9 +315,18 @@ input[type="radio"] {
 /* FILTERING RULES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 [value="mie"]:checked ~ .filters [for="mie"],
-[value="mhe"]:checked ~ .filters [for="mhe"],
 [value="mae"]:checked ~ .filters [for="mae"],
+[value="mhe"]:checked ~ .filters [for="mhe"],
 [value="be"]:checked ~ .filters [for="be"],
+
+[value="mie2"]:checked ~ .filters [for="mie2"],
+[value="mae2"]:checked ~ .filters [for="mae2"],
+[value="it"]:checked ~ .filters [for="it"],
+[value="fe"]:checked ~ .filters [for="fe"],
+[value="da"]:checked ~ .filters [for="da"],
+
+
+
 [value="tex"]:checked ~ .filters [for="tex"],
 [value="n"]:checked ~ .filters [for="n"],
 [value="c"]:checked ~ .filters [for="c"] {
@@ -330,9 +339,17 @@ input[type="radio"] {
 }
 
 [value="mie"]:checked ~ .posts .post:not([data-category~="mie"]),
-[value="mhe"]:checked ~ .posts .post:not([data-category~="mhe"]),
 [value="mae"]:checked ~ .posts .post:not([data-category~="mae"]),
+[value="mhe"]:checked ~ .posts .post:not([data-category~="mhe"]),
 [value="be"]:checked ~ .posts .post:not([data-category~="be"]),
+
+
+[value="mie2"]:checked ~ .posts .post:not([data-category~="mie2"]),
+[value="mae2"]:checked ~ .posts .post:not([data-category~="mae2"]),
+[value="it"]:checked ~ .posts .post:not([data-category~="it"]),
+[value="fe"]:checked ~ .posts .post:not([data-category~="fe"]),
+[value="da"]:checked ~ .posts .post:not([data-category~="da"]),
+
 [value="tex"]:checked ~ .posts .post:not([data-category~="tex"]),
 [value="n"]:checked ~ .posts .post:not([data-category~="n"]),
 [value="c"]:checked ~ .posts .post:not([data-category~="c"]) {
@@ -346,8 +363,8 @@ input[type="radio"] {
 
 @media screen and (max-width: 650px) {
   .filters label {
-  padding: 0.5rem 0.2rem;
-
+  padding: 0.4rem 0.2rem;
+  
   html {
     font-size: 14px;
     
